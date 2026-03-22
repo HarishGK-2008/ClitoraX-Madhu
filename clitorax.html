@@ -1,0 +1,870 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Clitorax | pH Indicator Toothpaste – Diagnose & Protect</title>
+    <meta
+      name="description"
+      content="Clitorax by Mathumitha Jeevanantham & Madhubala Krishnamoorthy – the first toothpaste with real‑time pH detection using Clitoria ternatea. Dual system: Indicator + Remedial."
+    />
+    <!-- Google Fonts & Font Awesome -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background: #eef5ff; /* Light blue background like PDF style */
+        color: #1e293b;
+        line-height: 1.5;
+        scroll-behavior: smooth;
+      }
+
+      .container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* header / nav */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 1.8rem;
+        font-weight: 800;
+        background: linear-gradient(135deg, #1e3a8a, #8b5cf6);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        letter-spacing: -0.5px;
+      }
+      .logo-img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        object-fit: cover;
+        background: white;
+        padding: 4px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 28px;
+        font-weight: 500;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #1e3a8a;
+        transition: 0.2s;
+      }
+
+      .nav-links a:hover {
+        color: #8b5cf6;
+      }
+
+      .btn-primary {
+        background: #1e3a8a;
+        color: white;
+        border: none;
+        padding: 12px 28px;
+        border-radius: 40px;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: 0.2s;
+        display: inline-block;
+        text-decoration: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      }
+
+      .btn-primary:hover {
+        background: #8b5cf6;
+        transform: translateY(-2px);
+      }
+
+      .btn-outline {
+        background: transparent;
+        border: 2px solid #1e3a8a;
+        color: #1e3a8a;
+        padding: 10px 24px;
+        border-radius: 40px;
+        font-weight: 600;
+        transition: 0.2s;
+        cursor: pointer;
+      }
+
+      .btn-outline:hover {
+        background: #1e3a8a;
+        color: white;
+      }
+
+      /* hero */
+      .hero {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        padding: 40px 0 60px;
+      }
+
+      .hero-content {
+        flex: 1;
+      }
+
+      .hero-badge {
+        background: #d9e8ff;
+        color: #1e3a8a;
+        padding: 6px 14px;
+        border-radius: 40px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+
+      .hero-content h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        color: #0f2b4d;
+      }
+
+      .hero-content p {
+        font-size: 1.2rem;
+        color: #2c3e66;
+        margin-bottom: 30px;
+      }
+
+      .hero-image {
+        flex: 1;
+        text-align: center;
+        background: white;
+        border-radius: 48px;
+        padding: 30px 20px;
+        box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.08);
+        border: 1px solid #cbdff2;
+      }
+
+      .product-visual {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+
+      .color-indicator {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 20px;
+      }
+
+      .color-dot {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: inline-block;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .blue-dot {
+        background: #3b82f6;
+      }
+      .purple-dot {
+        background: #a855f7;
+      }
+      .pink-dot {
+        background: #ec489a;
+      }
+
+      .section-title {
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin-bottom: 40px;
+        text-align: center;
+        color: #0f2b4d;
+        letter-spacing: -0.3px;
+      }
+
+      .section-sub {
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto 50px;
+        color: #2c3e66;
+      }
+
+      .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
+      }
+
+      .card {
+        background: white;
+        border-radius: 32px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+        padding: 28px;
+        transition: 0.25s;
+        border: 1px solid #e0edff;
+      }
+
+      .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 20px 35px -8px rgba(0, 0, 0, 0.1);
+      }
+
+      .product-badge {
+        background: #1e3a8a10;
+        color: #1e3a8a;
+        border-radius: 40px;
+        padding: 4px 12px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 16px;
+      }
+
+      .price {
+        font-size: 1.8rem;
+        font-weight: 800;
+        margin: 16px 0;
+      }
+
+      .ingredient-list {
+        list-style: none;
+        margin: 20px 0;
+        font-size: 0.85rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .ingredient-list li {
+        background: #f1f5f9;
+        padding: 4px 12px;
+        border-radius: 30px;
+      }
+
+      .step-box {
+        text-align: center;
+        padding: 24px;
+        background: white;
+        border-radius: 32px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      }
+
+      .step-number {
+        background: #8b5cf6;
+        width: 48px;
+        height: 48px;
+        border-radius: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 800;
+        font-size: 1.4rem;
+        margin: 0 auto 20px;
+      }
+
+      .faq-item {
+        border-bottom: 1px solid #e2e8f0;
+        padding: 20px 0;
+        cursor: pointer;
+        background: white;
+        margin-bottom: 12px;
+        border-radius: 24px;
+        padding: 20px;
+      }
+
+      .faq-question {
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.3s;
+        color: #475569;
+        padding-top: 8px;
+      }
+
+      .faq-item.active .faq-answer {
+        max-height: 200px;
+      }
+
+      .order-box {
+        background: white;
+        border-radius: 48px;
+        padding: 40px;
+        text-align: center;
+        margin: 40px 0;
+        box-shadow: 0 20px 30px -15px rgba(0, 0, 0, 0.05);
+        border: 1px solid #cbdff2;
+      }
+
+      footer {
+        background: #e0edff;
+        color: #1e3a8a;
+        padding: 40px 0 20px;
+        margin-top: 60px;
+        border-top: 1px solid #cbdff2;
+      }
+
+      .owner-credit {
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
+        background: #ffffffaa;
+        display: inline-block;
+        padding: 5px 14px;
+        border-radius: 40px;
+        color: #1e3a8a;
+      }
+
+      @media (max-width: 768px) {
+        .hero-content h1 {
+          font-size: 2.2rem;
+        }
+        .section-title {
+          font-size: 1.8rem;
+        }
+        .navbar {
+          flex-direction: column;
+        }
+        .nav-links {
+          gap: 20px;
+        }
+        .hero {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="container">
+      <div class="navbar">
+        <div class="logo">
+          <!-- REPLACE WITH YOUR ACTUAL LOGO IMAGE URL -->
+          <img
+            class="logo-img"
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%238B5CF6'/%3E%3Ctext x='50' y='70' text-anchor='middle' fill='white' font-size='40' font-weight='bold'%3EC%3C/text%3E%3C/svg%3E"
+            alt="Clitorax Logo"
+          />
+          <span>CLITORAX</span>
+        </div>
+        <div class="nav-links">
+          <a href="#howitworks">How it works</a>
+          <a href="#products">Products</a>
+          <a href="#science">Science</a>
+          <a href="#order">Shop</a>
+        </div>
+        <a href="#order" class="btn-primary">Shop Now →</a>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero with both owners -->
+      <div class="container">
+        <div class="hero">
+          <div class="hero-content">
+            <span class="hero-badge"
+              ><i class="fas fa-crown"></i> Created by Madhubala Krishnamoorthy
+              & Mathumitha Jeevanantham
+            </span>
+            <h1>
+              Know your mouth’s pH<br />
+              in every brush
+            </h1>
+            <p>
+              Clitorax pH Indicator Toothpaste — real‑time acidity detection
+              with natural <strong>Clitoria ternatea</strong> extract. Blue =
+              neutral, purple/pink = acidic. Dual system: Indicator + Remedial
+              paste.
+            </p>
+            <div style="display: flex; gap: 16px; flex-wrap: wrap">
+              <a href="#order" class="btn-primary">Buy Combo ₹320</a>
+              <a href="#products" class="btn-outline">Discover dual system</a>
+            </div>
+            <div class="color-indicator">
+              <div>
+                <div class="color-dot blue-dot"></div>
+                <span> Neutral pH</span>
+              </div>
+              <div>
+                <div class="color-dot purple-dot"></div>
+                <span> Acidic pH</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="product-visual">
+              <svg
+                width="140"
+                height="160"
+                viewBox="0 0 140 160"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="30"
+                  y="20"
+                  width="80"
+                  height="110"
+                  rx="20"
+                  fill="#EFF6FF"
+                  stroke="#1E3A8A"
+                  stroke-width="2"
+                />
+                <path
+                  d="M50 130 L90 130 L85 150 L55 150 Z"
+                  fill="#1E3A8A"
+                  opacity="0.8"
+                />
+                <circle
+                  cx="70"
+                  cy="70"
+                  r="20"
+                  fill="white"
+                  stroke="#8B5CF6"
+                  stroke-width="2"
+                />
+                <text
+                  x="70"
+                  y="75"
+                  text-anchor="middle"
+                  fill="#8B5CF6"
+                  font-size="10"
+                >
+                  pH
+                </text>
+                <rect
+                  x="45"
+                  y="25"
+                  width="50"
+                  height="8"
+                  rx="4"
+                  fill="#8B5CF6"
+                />
+                <text
+                  x="70"
+                  y="140"
+                  text-anchor="middle"
+                  fill="#1E3A8A"
+                  font-size="9"
+                >
+                  Clitorax
+                </text>
+              </svg>
+              <svg
+                width="100"
+                height="100"
+                viewBox="0 0 100 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M50 15 L60 35 L82 38 L66 54 L72 76 L50 64 L28 76 L34 54 L18 38 L40 35 Z"
+                  fill="#8B5CF6"
+                  fill-opacity="0.2"
+                  stroke="#4C1D95"
+                  stroke-width="1.5"
+                />
+                <circle cx="50" cy="50" r="8" fill="#FFD966" />
+              </svg>
+            </div>
+            <p style="margin-top: 12px; font-weight: 600">
+              pH indicator toothpaste — 200g
+            </p>
+            <p style="font-size: 0.8rem">
+              Colour changes while brushing: blue → purple/pink if acidic
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Problem vs solution: only Clitorax solution card remains -->
+      <div class="container">
+        <div class="section-title">Why Clitorax is different</div>
+        <div class="grid-2" style="grid-template-columns: 1fr">
+          <div class="card" style="border-left: 4px solid #8b5cf6">
+            <i class="fas fa-leaf" style="font-size: 2rem; color: #16a34a"></i>
+            <h3 style="margin: 16px 0 8px">
+              Real‑time pH diagnosis + remedial action
+            </h3>
+            <p>
+              Natural Clitoria ternatea extract shifts colour at acidic pH.
+              Helps prevent caries before they start. No other toothpaste gives
+              you daily insight into your oral acidity.
+            </p>
+            <p
+              class="owner-credit"
+              style="margin-top: 12px; background: #ede9fe"
+            >
+              🌟 Innovators: Mathumitha Jeevanantham & Madhubala Krishnamoorthy
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- How it works (3 steps) -->
+      <div class="container" id="howitworks">
+        <div class="section-title">How to use</div>
+        <div
+          class="grid-2"
+          style="grid-template-columns: repeat(3, 1fr); gap: 20px"
+        >
+          <div class="step-box">
+            <div class="step-number">1</div>
+            <i class="fas fa-toothbrush" style="font-size: 2rem"></i>
+            <h3>Apply pea‑size</h3>
+            <p>Use pH indicator toothpaste on brush</p>
+          </div>
+          <div class="step-box">
+            <div class="step-number">2</div>
+            <i class="fas fa-hourglass-half"></i>
+            <h3>Brush 2 min</h3>
+            <p>Watch foam change colour</p>
+          </div>
+          <div class="step-box">
+            <div class="step-number">3</div>
+            <i class="fas fa-chart-line"></i>
+            <h3>Interpret & protect</h3>
+            <p>
+              Blue → healthy. Purple/pink → acidic → use Remedial toothpaste
+            </p>
+          </div>
+        </div>
+        <p style="text-align: center; margin-top: 20px">
+          <i class="fas fa-box"></i> Full pH identification chart inside every
+          box
+        </p>
+      </div>
+
+      <!-- Dual Product cards -->
+      <div class="container" id="products">
+        <div class="section-title">The dual system: diagnose + remedy</div>
+        <div class="grid-2">
+          <!-- Indicator toothpaste -->
+          <div class="card">
+            <span class="product-badge"
+              ><i class="fas fa-eye"></i> pH DIAGNOSTIC</span
+            >
+            <h2>Clitorax Indicator Toothpaste</h2>
+            <div class="price">
+              ₹170 <span style="font-size: 1rem">/ 200g</span>
+            </div>
+            <p>
+              <strong>Key actives:</strong> Clitoria extract (5%), Xylitol 20%,
+              Trisodium citrate buffer, reduced abrasives.
+            </p>
+            <ul class="ingredient-list">
+              <li>Clitoria ternatea</li>
+              <li>Xylitol</li>
+              <li>Calcium Carbonate</li>
+              <li>Xanthan Gum</li>
+              <li>Thymol</li>
+              <li>Peppermint oil</li>
+            </ul>
+            <p>
+              <i class="fas fa-syringe"></i>
+              <strong>Function:</strong> Real‑time pH mapping: Blue=neutral,
+              Pink=acidic.
+            </p>
+          </div>
+          <!-- Remedial toothpaste -->
+          <div class="card">
+            <span class="product-badge"
+              ><i class="fas fa-shield-alt"></i> REMEDIAL</span
+            >
+            <h2>Clitorax Remedial Toothpaste</h2>
+            <div class="price">
+              ₹170 <span style="font-size: 1rem">/ 200g</span>
+            </div>
+            <p>
+              <strong>Key actives:</strong> Neem extract, Tulasi, Xylitol 7%,
+              Tannic Acid, Sodium Bicarbonate.
+            </p>
+            <ul class="ingredient-list">
+              <li>Neem</li>
+              <li>Tulsi</li>
+              <li>Xylitol</li>
+              <li>Tannic Acid</li>
+              <li>Sodium Bicarbonate</li>
+              <li>Menthol</li>
+            </ul>
+            <p>
+              <i class="fas fa-heartbeat"></i>
+              <strong>Function:</strong> Restores pH balance, inhibits aciduric
+              bacteria, prevents caries.
+            </p>
+          </div>
+        </div>
+        <p style="text-align: center; margin: 20px 0 30px">
+          <i class="fas fa-tag"></i> <strong>Combo offer:</strong> Both
+          toothpastes for ₹320 (save ₹20)
+        </p>
+      </div>
+
+      <!-- Benefits list with icons -->
+      <div class="container">
+        <div class="section-title">Why it’s revolutionary</div>
+        <div
+          class="grid-2"
+          style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))"
+        >
+          <div class="card">
+            <i class="fas fa-chart-simple" style="color: #8b5cf6"></i>
+            <strong>Early detection</strong><br />Oral acidity alert daily
+          </div>
+          <div class="card">
+            <i class="fas fa-leaf" style="color: #8b5cf6"></i>
+            <strong>Natural indicator</strong><br />Anthocyanins from butterfly
+            pea
+          </div>
+          <div class="card">
+            <i class="fas fa-smile" style="color: #8b5cf6"></i>
+            <strong>Prevents tooth decay</strong><br />Remedial paste with neem
+            & tulsi
+          </div>
+          <div class="card">
+            <i class="fas fa-flask" style="color: #8b5cf6"></i>
+            <strong>Optimized formula</strong><br />Reduced SLS, buffers
+            preserve pigments
+          </div>
+        </div>
+      </div>
+
+      <!-- Mechanism of action + science -->
+      <div class="container" id="science">
+        <div class="section-title">The science behind colour change</div>
+        <div class="grid-2">
+          <div class="card">
+            <h3><i class="fas fa-droplet"></i> Anthocyanin pH sensor</h3>
+            <p>
+              Clitoria ternatea flower extract contains anthocyanins. In neutral
+              pH they remain blue; in acidic oral environment (pH < 5.5) they
+              convert to flavylium cation → purple/pink.
+            </p>
+            <p style="margin-top: 12px">
+              <strong>Optimized stability:</strong> Trisodium citrate buffers
+              paste at pH 6-7, and reduced SLS prevents pigment degradation.
+            </p>
+          </div>
+          <div class="card">
+            <h3><i class="fas fa-microscope"></i> Remedial action</h3>
+            <p>
+              Neem, tulsi, xylitol, and sodium bicarbonate create an unfavorable
+              environment for cariogenic bacteria (S. mutans). Tannic acid
+              provides astringent & anti‑inflammatory effect.
+            </p>
+            <p>
+              <strong>Reference:</strong> Shafer’s Oral Pathology, Essentials of
+              Preventive Dentistry.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ingredients full (both pastes) -->
+      <div class="container">
+        <div class="section-title">
+          Inside the tubes — transparent ingredients
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <h3>🟦 Indicator Toothpaste</h3>
+            <p style="font-size: 0.9rem">
+              Calcium Carbonate (40%), Xanthan Gum (1.5%), Xylitol (20%), Sodium
+              Lauryl Sulphate (0.8%), Thymol (0.2%), Peppermint oil (0.5%),
+              Sodium Benzoate (0.5%), Trisodium citrate (1%), Clitoria extract
+              (5%), Water q.s.
+            </p>
+          </div>
+          <div class="card">
+            <h3>🟪 Remedial Toothpaste</h3>
+            <p style="font-size: 0.9rem">
+              Calcium Carbonate (17%), Glycerin (22%), Neem extract (1.5%),
+              Tulasi extract (1%), Xylitol (7%), Tannic Acid (0.17%), Sodium
+              Bicarbonate (1%), Sodium Lauryl Sulphate (0.5%), Sodium Saccharin
+              (0.1%), Menthol (0.05%), Peppermint oil (0.2%), Sodium Benzoate
+              (0.2%).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="container">
+        <div class="section-title">Frequently asked questions</div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-question">
+              Is the colour change safe? <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              Absolutely. It's derived from natural Clitoria ternatea flower
+              anthocyanins — no synthetic dyes.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              How often should I use remedial toothpaste?
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              Whenever the indicator shows purple/pink. For persistent acidity,
+              use remedial for 3-5 days until pH normalizes.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              Can children use Clitorax? <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              Not recommended for children below 6 years. Above 6 with
+              supervision.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              Is it vegetarian & cruelty‑free?
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              Yes, all ingredients are plant‑based, no animal testing.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Order Section -->
+      <div class="container" id="order">
+        <div class="order-box">
+          <h2>Start monitoring your oral health today</h2>
+          <p>Choose your pack — free shipping across India</p>
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              gap: 20px;
+              flex-wrap: wrap;
+              margin: 30px 0;
+            "
+          >
+            <div>
+              <button class="btn-outline" data-product="indicator">
+                Indicator only – ₹170
+              </button>
+            </div>
+            <div>
+              <button class="btn-outline" data-product="remedial">
+                Remedial only – ₹170
+              </button>
+            </div>
+            <div>
+              <button class="btn-primary" data-product="combo">
+                🔥 COMBO (both) – ₹320
+              </button>
+            </div>
+          </div>
+          <p style="font-size: 0.8rem">
+            <i class="fas fa-shield-alt"></i> Made in India | Batch: 5356 | MFG:
+            23/03/2026 | EXP: 23/09/2026
+          </p>
+          <p>Manufactured by: Rajas Dental Industries, Kavalikinaru - 627105</p>
+          <p style="margin-top: 12px">
+            <i class="fas fa-heart" style="color: #e11d48"></i> Developed by
+            <strong>
+              Madhubala Krishnamoorthy & Mathumitha Jeevanantham
+            </strong>
+            — Innovation in Oral Care
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container" style="text-align: center">
+        <p>© 2026 Clitorax — pH indicator & remedial toothpaste system</p>
+        <p>✨ Founders:Madhubala Krishnamoorthy & Mathumitha Jeevanantham ✨</p>
+        <p><strong>📧 madhudentcarecorporation@pvt.lt</strong></p>
+        <p style="margin-top: 12px; font-size: 0.85rem">
+          Detects oral acidity | Prevents tooth decay | Natural ingredients
+        </p>
+        <p style="margin-top: 16px">
+          <i class="fas fa-envelope"></i> care@clitorax.com |
+          <i class="fas fa-phone-alt"></i> +91 99941 53248
+        </p>
+        <p style="margin-top: 20px">
+          ⚠️ Caution: Do not swallow. Not for children below 6 years. See inside
+          box for full pH identification guidelines.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // FAQ toggles
+      const faqItems = document.querySelectorAll('.faq-item')
+      faqItems.forEach((item) => {
+        const q = item.querySelector('.faq-question')
+        if (q)
+          q.addEventListener('click', () => {
+            item.classList.toggle('active')
+          })
+      })
+
+      // simple purchase simulation
+      const buttons = document.querySelectorAll('[data-product]')
+      buttons.forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+          const product = btn.getAttribute('data-product')
+          let message = ''
+          if (product === 'indicator')
+            message =
+              '✅ Added Clitorax pH Indicator Toothpaste (₹170) to cart.'
+          else if (product === 'remedial')
+            message = '✅ Added Clitorax Remedial Toothpaste (₹170) to cart.'
+          else
+            message =
+              '✅ Combo pack (Indicator + Remedial) added for ₹320. Free shipping!'
+          alert(
+            message +
+              '\n\nThank you for choosing Clitorax — by Mathumitha & Madhubala!',
+          )
+        })
+      })
+    </script>
+  </body>
+</html>
